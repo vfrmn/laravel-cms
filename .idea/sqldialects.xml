@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/../testsite_dump/laravel_book_genre.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/../testsite_dump/laravel_books.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/../testsite_dump/laravel_genres.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/../testsite_dump/laravel_pages.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/../testsite_dump/laravel_publishers.sql" dialect="MySQL" />
+  </component>
+</project>

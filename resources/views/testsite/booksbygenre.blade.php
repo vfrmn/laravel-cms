@@ -1,8 +1,8 @@
-@extends('app')
+@extends('layouts.app')
 @section('content')
     <main  role="main">
         <div class="container mt-5 pt-5 align-content-center">
-            <h1 class="text-center">Видавництво: {{$pub_name}}</h1>
+            <h1 class="text-center">Жанр: {{$genre_name}}</h1>
             <!-- Example row of columns -->
             <div class="row mt-5 justify-content-center">
                 @foreach ($books as $book)
@@ -12,12 +12,9 @@
                         <p>Автор: {{$book->author}}</p>
                     </div>
                 @endforeach
-
             </div>
-
             <hr>
-
         </div> <!-- /container -->
 
     </main>
-    @endsection
+@endsection

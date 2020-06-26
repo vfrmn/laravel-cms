@@ -3,15 +3,15 @@
 namespace App\Http\Controllers;
 
 use App\Page;
+use Cron\FieldInterface;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
 
-    public function index($page_name, $lan = 'ua'){
-        Page::$language = $lan ;
+    public function index($page_name, $lan = null){
+        if ($lan) Page::$language = $lan ;
         $page = Page::where('caption', $page_name)->first();
-        $page->render();
-
+        return $page->render();
     }
 }
